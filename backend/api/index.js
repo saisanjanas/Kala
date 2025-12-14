@@ -14,6 +14,11 @@ mongoose.connect(process.env.MONGO_URI)
 // Example API route
 app.get("/api/test", (req, res) => {
   res.json({ message: "Backend working!" });
+  
 });
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hello from backend 👋" })
+})
+
 
 module.exports = app;
